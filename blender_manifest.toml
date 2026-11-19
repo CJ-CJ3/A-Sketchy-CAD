@@ -1,0 +1,23 @@
+schema_version = "1.0.0"
+
+id = "parametric_cad_tools"
+version = "0.9.2"
+name = "Parametric CAD Tools"
+tagline = "Dedicated Sketch Mode - Line, Circle, Rect, Move, Slice tools"
+maintainer = "CAD Addon"
+type = "add-on"
+
+# Minimum supported Blender version. The original bl_info declared
+# 3.3.0, which is almost certainly what triggers Blender 5.0's
+# installer to fall back to a legacy-compatibility code path instead
+# of installing this as a normal extension - that fallback path is
+# what's crashing with the 'function' object has no attribute
+# '__mro__' error, not this add-on's own registration list.
+blender_version_min = "4.2.0"
+
+license = [
+    "SPDX:GPL-3.0-or-later",
+]
+
+# No internet access, external dependencies, or file-system access
+# beyond what Blender itself already grants add-ons.
